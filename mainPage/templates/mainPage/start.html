@@ -1,0 +1,13 @@
+{% extends "mainPage/layout.html" %}
+
+{% block title %} {{ title }} {% endblock %}
+{% load static %}
+{% block content %}
+<div class="simple_text">
+    <h1>{{ title }}</h1>
+    <p>Welcome to the news site</p>
+    <p>There is a simple test site</p>
+    <p>You can go to "127.0.0.1:8000/admin" to admin menu and create news post.</p>
+    <p>Good luck)</p>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'mainPage/layout.html' %}
+
+{% block title %} {{ data.title }} {% endblock title %}
+
+{% block content %}
+<h1 style="color: #00A67C; text-align: center; margin-bottom: 25px;">News</h1>
+    {% if news %}
+        {% for i in news %}
+        <div class="alert alert-warning" style="margin-left:700px">
+            <h3>{{ i.title }}</h3>
+            <p>{{ i.intro }}</p>
+            <a class="from_tt" href="news/{{ i.id }}">Read more</a>
+        </div>
+        {% endfor %}
+    {% else %}
+        <h2>No news yet</h2>
+    {% endif %}
+{% endblock content %}

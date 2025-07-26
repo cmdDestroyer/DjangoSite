@@ -1,0 +1,11 @@
+{% extends 'mainPage/layout.html' %}
+
+{% block title %}{{ article.title }}{% endblock title %}
+
+{% block content %}
+<h1 style="color: #00A67C; text-align: center; margin-bottom: 25px">{{ article.title }}</h1>
+<div class="news">
+    <p>{{ article.body|linebreaks}}</p>
+    <p>{{ article.date }}</p>
+</div>
+{% endblock content %}

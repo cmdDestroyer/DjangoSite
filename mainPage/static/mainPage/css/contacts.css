@@ -1,0 +1,29 @@
+.buttons{
+    float: left;
+    list-type-style: none;
+    width: 100vw;
+    padding: 1%;
+    text-align: center;
+}
+
+.buttons a{
+    text-decoration: none;
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+}
+
+.buttons a img{
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #fc04e4 0%, #00f7ff 100%) 10;
+}
+
+.buttons p{
+    display: inline-block;
+    color:#5FD2B5;
+    position: relative;
+    top: -20px;
+    height: 50px;
+    width: 100px;
+}
+
